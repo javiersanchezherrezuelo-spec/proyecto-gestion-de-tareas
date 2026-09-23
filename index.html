@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Lista de Tareas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <header class="app-header">
+      <h1 class="app-title">Mi Lista de Tareas</h1>
+      <p class="app-subtitle">Organiza tu día, una tarea a la vez</p>
+    </header>
+
+    <main class="app-main">
+
+      <section class="add-task-section" aria-labelledby="add-heading">
+        <h2 id="add-heading" class="visually-hidden">Añadir nueva tarea</h2>
+        <form class="add-task-form" action="#" method="get" novalidate>
+          <label for="task-input" class="form-label">Nueva tarea</label>
+          <div class="form-row">
+            <input
+              type="text"
+              id="task-input"
+              name="task"
+              class="task-input"
+              placeholder="Escribe una tarea..."
+              maxlength="120"
+            />
+            <button type="submit" class="btn btn-add">Añadir</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="task-list-section" aria-labelledby="list-heading">
+        <h2 id="list-heading" class="section-title">
+          Tareas
+          <span class="task-count">0</span>
+        </h2>
+
+        <ul class="task-list" role="list"></ul>
+      </section>
+
+      <section class="actions-section" aria-label="Acciones sobre la lista">
+        <button type="button" class="btn btn-delete">Eliminar completadas</button>
+        <button type="button" class="btn btn-delete-all">Eliminar todas</button>
+      </section>
+
+    </main>
+
+    <footer class="app-footer">
+      <p>Proyecto final &mdash; Bootcamp HackABoss &middot; 2026</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
